@@ -54,6 +54,7 @@ app.get('/addedPost', newPost.addPost);
 app.get('/browse/browselist/:userid', browselist.getItemData);
 app.get('/login', login.view);
 
+app.get('/added', newPost.addPost);
 // Example route
 // app.get('/users', user.list);
 
