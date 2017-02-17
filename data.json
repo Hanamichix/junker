@@ -1,0 +1,118 @@
+{
+	"accounts": [
+		{
+			"userid" : 1,
+			"name": "Doug Engelbart",
+			"posts": [1, 2],
+			"contact": 12345
+	
+		},
+		{
+			"userid" : 2,
+			"name": "Ivan Sutherland",
+			"posts": [3, 4],
+			"contact": 12345		
+		},
+		{
+			"userid" : 3,
+			"name": "Lucy Suchman",
+			"posts": [5, 6],
+			"contact": 12345
+		}
+	],
+	"items": [
+		{
+			"itemid": 1,
+			"name": "pencil",
+			"description": "a pencil",
+			"owner": 1,
+			"imageURL": "http://lorempixel.com/400/400/people",	
+			"interested": [
+				{
+					"userid": 2,
+					"tradewith": 2
+
+				},
+				{
+					"userid": 3,
+					"tradewith": 3
+				}
+			]		
+		},
+		{
+			"itemid": 2,
+			"name": "football",
+			"description": "a football",
+			"owner": 2,
+			"imageURL": "http://lorempixel.com/400/400/cats",
+			"interested": [
+				{
+					"userid": 1,
+					"tradewith": 1
+				}
+			]			
+		},
+		{
+			"itemid": 3,
+			"name": "bag",
+			"description": "a bag",
+			"owner": 3,
+			"imageURL": "http://lorempixel.com/400/200/sports/1",
+			"interested": [
+				{
+					"userid": 1,
+					"tradewith": 1
+				},
+				{
+					"userid": 2,
+					"tradewith": 4
+				}
+
+			]			
+		},
+		{
+			"itemid": 4,
+			"name": "box",
+			"description": "a box",
+			"owner": 2,
+			"imageURL": "http://lorempixel.com/400/200/sports/1",
+			"interested": [
+				{
+					"userid": null,
+					"tradewith": null
+				}
+			]			
+
+
+		},
+		{
+			"itemid": 5,
+			"name": "sharpie",
+			"description": "a sharpie",
+			"owner": 1,
+			"imageURL": "http://lorempixel.com/400/400/cats/",
+			"interested": [
+				{
+					"userid": 3,
+					"tradewith": 3
+				}
+			]
+
+		},
+		{
+			"itemid": 6,
+			"name": "bike",
+			"description": "a bike",
+			"owner": 3,
+			"imageURL": "http://lorempixel.com/400/400/cats/",
+			"interested": [
+				{
+					"userid": null,
+					"tradewith": null
+				}
+			]		
+
+		}
+	]
+
+}
