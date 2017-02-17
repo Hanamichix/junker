@@ -11,11 +11,11 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var myPost = require('./routes/myPost');
 var newPost = require('./routes/newPost');
-var history = require('./routes/history');
 var browse = require('./routes/browse');
 var match = require('./routes/match');
-var profile = require('./routes/profile');
-var settings = require('./routes/settings');
+var login = require('./routes/login');
+var browselist = require('./routes/browselist');
+
 
 // var match = require('./routes/match');
 // Example route
@@ -48,11 +48,12 @@ app.get('/', index.view);
 app.get('/index', index.view);
 app.get('/browse', browse.view);
 app.get('/match', match.view);
-app.get('/history', history.view);
 app.get('/myPost', myPost.view);
 app.get('/newPost', newPost.view);
-app.get('/profile', profile.view);
-app.get('/settings', settings.view);
+app.get('/addedPost', newPost.addPost);
+app.get('/browse/browselist/:userid', browselist.getItemData);
+app.get('/login', login.view);
+
 app.get('/added', newPost.addPost);
 // Example route
 // app.get('/users', user.list);
