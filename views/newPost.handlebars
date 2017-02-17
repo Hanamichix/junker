@@ -314,7 +314,7 @@ label{
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
 
-        <form id="waterform" method="get" action = "/addedPost">
+        <form id="waterform" method="get" action = "/added">
 
             <div class="formgroup" id="name-form">
                 <label for="name">Item Name</label>
@@ -334,18 +334,9 @@ label{
             <div class="formgroup" id="photo-form">
                 <label for="message">Choose a picture</label>
                 <input type="file" accept="image/*" onchange="picChange(event)"/>
-                <p>
-                    Photo:
-                </p>
-                <canvas id="capturedPhoto" width="500" height="400">
-                </canvas>
             </div>
 
             <input type="submit" value="Submit!" /> 
-            <div>
-            <a href="myPost">
-                <button id="cancel" class="button">Cancel</button>
-            </a>
         </div>
         </form>
     </div>

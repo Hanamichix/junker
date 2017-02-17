@@ -8,7 +8,6 @@ exports.view = function(req, res) {
 	var myposts;
 	var accounts = data.accounts;
 	var items = data.items;
-	console.log("posts");
 	for(var i = 0; i < accounts.length; i ++){  
         if(accounts[i].userid == userid){
         	myposts = accounts[i].posts;
@@ -22,6 +21,5 @@ exports.view = function(req, res) {
 			}
 		}
 	}
-	console.log(posts);
     res.render('myPost', {'posts': posts});
 }

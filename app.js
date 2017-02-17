@@ -53,7 +53,7 @@ app.get('/myPost', myPost.view);
 app.get('/newPost', newPost.view);
 app.get('/profile', profile.view);
 app.get('/settings', settings.view);
-app.get('/addedPost', newPost.addPost);
+app.get('/added', newPost.addPost);
 // Example route
 // app.get('/users', user.list);
 

@@ -42,6 +42,7 @@ exports.addPost= function(req, res){
 			}
 		}
 	}
+//	newItem = null;
 	console.log(posts);
     res.render('myPost', {'posts': posts});
 	
